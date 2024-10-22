@@ -1,0 +1,94 @@
+.SH NAME
+sysopctl \- A custom Linux command for managing system resources and tasks.
+
+.SH SYNOPSIS
+.B sysopctl
+[\fB--help\fR] [\fB--version\fR] \fIcommand\fR [\fIoptions\fR] [\fIarguments\fR]
+
+.SH DESCRIPTION
+.B sysopctl
+is a versatile system administration utility designed to streamline the management of system resources, services, processes, and overall system health. This tool offers a user-friendly interface for performing common administrative tasks efficiently.
+
+.SH COMMANDS
+.TP
+.B service list
+Display a list of all active services currently running on the system.
+
+.TP
+.B service start <service-name>
+Initiate the specified service.
+
+.TP
+.B service stop <service-name>
+Terminate the specified service.
+
+.TP
+.B system load
+Show the current system load averages to monitor performance.
+
+.TP
+.B disk usage
+Display disk usage statistics for each partition.
+
+.TP
+.B process monitor
+Observe and monitor system processes in real-time.
+
+.TP
+.B logs analyze
+Analyze and review recent critical log entries for system health checks.
+
+.TP
+.B backup <path>
+Create a backup of system files from the specified path.
+
+.SH OPTIONS
+.TP
+.B --help
+Output help information for using the command.
+
+.TP
+.B --version
+Output version information for the tool.
+
+.SH EXAMPLES
+.TP
+.B sysopctl service list
+Displays all active system services currently running.
+
+.TP
+.B sysopctl service start apache2
+Starts the `apache2` service.
+
+.TP
+.B sysopctl service stop apache2
+Stops the `apache2` service.
+
+.TP
+.B sysopctl system load
+Displays the current load averages of the system.
+
+.TP
+.B sysopctl disk usage
+Shows disk usage statistics for all partitions.
+
+.TP
+.B sysopctl process monitor
+Initiates real-time monitoring of system processes.
+
+.TP
+.B sysopctl logs analyze
+Analyzes and displays recent critical log entries.
+
+.TP
+.B sysopctl backup /home/user
+Creates a backup of the `/home/user` directory.
+
+.SH VERSION
+v0.1.0
+
+.SH AUTHOR
+Developed by Abhishek
+
+.SH SEE ALSO
+systemctl(1), uptime(1), df(1), top(1), journalctl(1), rsync(1)
